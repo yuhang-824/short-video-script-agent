@@ -1,0 +1,26 @@
+Command: -m pip wheel --no-deps . --wheel-dir runtime/package-check
+Exit code: 0
+Processing <PROJECT_ROOT>
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: short-video-script-agent
+  Building wheel for short-video-script-agent (pyproject.toml): started
+  Building wheel for short-video-script-agent (pyproject.toml): finished with status 'done'
+  Created wheel for short-video-script-agent: filename=short_video_script_agent-0.1.0-py3-none-any.whl size=38643 sha256=e1c0582d7ed3ee7376263db0ac5945ffd23bedce699b02a20c63b6cfa4ed8e58
+  Stored in directory: <USER_HOME>\appdata\local\pip\cache\wheels\54\26\76\c16072df4a90528ba566197c54b8c53db49a2f967456cea094
+Successfully built short-video-script-agent
+
+
+[notice] A new release of pip is available: 24.0 -> 26.2.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+Command: node --check src/video_script/web_assets/app.js
+Exit code: 0
+
+
+Wheel contains Python source, HTML, JS, CSS and both CLI entrypoints: PASS
+CLI smoke run: completed; actual duration 28; actual steps 9

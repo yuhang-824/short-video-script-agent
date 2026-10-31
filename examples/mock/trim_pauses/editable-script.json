@@ -1,0 +1,39 @@
+{
+  "title": "字幕创作小灵感",
+  "profile": "minimal",
+  "revision": 4,
+  "audience": "短视频创作者",
+  "platform": "抖音",
+  "style": "简洁清晰",
+  "shots": [
+    {
+      "shot_id": "S01",
+      "visual_type": "title_card",
+      "visual": "展示主题标题卡片",
+      "narration": "一起看个创作灵感",
+      "subtitle": "一起看个创作灵感",
+      "hold_seconds": 0,
+      "fact_ids": []
+    },
+    {
+      "shot_id": "S02",
+      "visual_type": "fact_card",
+      "visual": "用文字卡展示已核实的产品事实",
+      "narration": "支持字幕",
+      "subtitle": "支持字幕",
+      "hold_seconds": 0,
+      "fact_ids": [
+        "P01:F01"
+      ]
+    },
+    {
+      "shot_id": "S03",
+      "visual_type": "cta_card",
+      "visual": "切换至创作邀请文字卡",
+      "narration": "现在开始创作吧",
+      "subtitle": "现在开始创作吧",
+      "hold_seconds": 0,
+      "fact_ids": []
+    }
+  ]
+}

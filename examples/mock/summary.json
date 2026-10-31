@@ -1,0 +1,249 @@
+{
+  "generated_at": "2026-10-31T05:49:49+00:00",
+  "mode": "mock",
+  "passed": 22,
+  "total": 22,
+  "cases": [
+    {
+      "case": "normal",
+      "label": "正常生成 · 45秒上限",
+      "passed": true,
+      "status": "completed",
+      "duration_history": [
+        38
+      ],
+      "steps": 7,
+      "error": null
+    },
+    {
+      "case": "duration_revision",
+      "label": "超时修订 · 38→28秒",
+      "passed": true,
+      "status": "completed",
+      "duration_history": [
+        38,
+        28
+      ],
+      "steps": 9,
+      "error": null
+    },
+    {
+      "case": "missing_information",
+      "label": "缺关键信息 · 目标时长",
+      "passed": true,
+      "status": "needs_information",
+      "duration_history": [],
+      "steps": 2,
+      "error": null
+    },
+    {
+      "case": "missing_audience",
+      "label": "缺受众",
+      "passed": true,
+      "status": "needs_information",
+      "duration_history": [],
+      "steps": 2,
+      "error": null
+    },
+    {
+      "case": "missing_style",
+      "label": "缺风格",
+      "passed": true,
+      "status": "needs_information",
+      "duration_history": [],
+      "steps": 2,
+      "error": null
+    },
+    {
+      "case": "no_materials",
+      "label": "无素材 · 补检索后请求资料",
+      "passed": true,
+      "status": "needs_materials",
+      "duration_history": [],
+      "steps": 4,
+      "error": null
+    },
+    {
+      "case": "unrelated_theme",
+      "label": "资料外主题",
+      "passed": true,
+      "status": "needs_materials",
+      "duration_history": [],
+      "steps": 4,
+      "error": null
+    },
+    {
+      "case": "query_rewrite",
+      "label": "查询改写 · 配字→字幕",
+      "passed": true,
+      "status": "completed",
+      "duration_history": [
+        38,
+        28
+      ],
+      "steps": 10,
+      "error": null
+    },
+    {
+      "case": "tool_failure",
+      "label": "工具失败 · 时长估算",
+      "passed": true,
+      "status": "failed",
+      "duration_history": [],
+      "steps": 6,
+      "error": null
+    },
+    {
+      "case": "search_failure",
+      "label": "工具失败 · 素材检索",
+      "passed": true,
+      "status": "failed",
+      "duration_history": [],
+      "steps": 3,
+      "error": null
+    },
+    {
+      "case": "read_failure",
+      "label": "工具失败 · 原文读取",
+      "passed": true,
+      "status": "failed",
+      "duration_history": [],
+      "steps": 4,
+      "error": null
+    },
+    {
+      "case": "rules_failure",
+      "label": "工具失败 · 规则检查",
+      "passed": true,
+      "status": "failed",
+      "duration_history": [
+        38,
+        28
+      ],
+      "steps": 9,
+      "error": null
+    },
+    {
+      "case": "rule_revision",
+      "label": "规则修订 · 去掉禁用表述",
+      "passed": true,
+      "status": "completed",
+      "duration_history": [
+        38,
+        28
+      ],
+      "steps": 10,
+      "error": null
+    },
+    {
+      "case": "unsupported_claim",
+      "label": "无依据主张 · 拦截80%并修订",
+      "passed": true,
+      "status": "completed",
+      "duration_history": [
+        40,
+        28
+      ],
+      "steps": 10,
+      "error": null
+    },
+    {
+      "case": "impossible_duration",
+      "label": "时长无法满足 · 2秒",
+      "passed": true,
+      "status": "constraints_unmet",
+      "duration_history": [
+        38,
+        28,
+        8,
+        5
+      ],
+      "steps": 12,
+      "error": null
+    },
+    {
+      "case": "trim_pauses",
+      "label": "去掉停顿 · 5秒",
+      "passed": true,
+      "status": "completed",
+      "duration_history": [
+        38,
+        28,
+        8,
+        5
+      ],
+      "steps": 13,
+      "error": null
+    },
+    {
+      "case": "minimal_script",
+      "label": "最简结构 · 10秒",
+      "passed": true,
+      "status": "completed",
+      "duration_history": [
+        38,
+        28,
+        8
+      ],
+      "steps": 11,
+      "error": null
+    },
+    {
+      "case": "slow_speech",
+      "label": "变更语速 · 每秒2字",
+      "passed": true,
+      "status": "completed",
+      "duration_history": [
+        49,
+        35,
+        13
+      ],
+      "steps": 11,
+      "error": null
+    },
+    {
+      "case": "source_changed",
+      "label": "替换产品事实 · 支持片段裁剪",
+      "passed": true,
+      "status": "completed",
+      "duration_history": [
+        39,
+        29
+      ],
+      "steps": 9,
+      "error": null
+    },
+    {
+      "case": "rule_unmet",
+      "label": "规则无法满足 · 禁用字幕",
+      "passed": true,
+      "status": "constraints_unmet",
+      "duration_history": [
+        38,
+        28,
+        8
+      ],
+      "steps": 13,
+      "error": null
+    },
+    {
+      "case": "unsupported_platform",
+      "label": "不支持的平台",
+      "passed": true,
+      "status": "needs_information",
+      "duration_history": [],
+      "steps": 2,
+      "error": null
+    },
+    {
+      "case": "step_limit",
+      "label": "步数上限 · 保留已读素材",
+      "passed": true,
+      "status": "incomplete",
+      "duration_history": [],
+      "steps": 3,
+      "error": null
+    }
+  ],
+  "boundary": "Offline Mock results do not prove real-model decisions or creative quality."
+}

@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T05:49:49+00:00",
+  "execution_mode": "mock",
+  "model": "offline-video-policy-v1",
+  "requested_model": "offline-video-policy-v1",
+  "catalog_version": "synthetic-video-v1",
+  "catalog_digest": "87362fae176fff5dc2782f8babaa85644ff18a1568cc495777b1168c9cd81acc",
+  "evidence_boundary": "Mock verifies workflow and deterministic guards only; not real model decisions or creative quality.",
+  "steps_taken": 3,
+  "max_steps": 3,
+  "stop_reason": "step_limit_reached",
+  "model_api_usage": null,
+  "request": {
+    "request_id": "step_limit",
+    "theme": "字幕创作",
+    "audience": "短视频创作者",
+    "platform": "抖音",
+    "target_seconds": 30,
+    "style": "简洁清晰"
+  },
+  "missing_fields": [],
+  "searches": [
+    {
+      "query": "字幕创作",
+      "strategy": "keyword",
+      "effective_query": "字幕创作",
+      "hits": [
+        {
+          "material_id": "P01",
+          "title": "视频工具字幕事实卡",
+          "version_date": "2026-01-01",
+          "fact_ids": [
+            "P01:F01"
+          ]
+        }
+      ]
+    }
+  ],
+  "materials_read": [
+    {
+      "material_id": "P01",
+      "title": "视频工具字幕事实卡",
+      "source_text": "产品支持字幕。",
+      "facts": [
+        {
+          "fact_id": "P01:F01",
+          "material_id": "P01",
+          "text": "支持字幕",
+          "source_text": "产品支持字幕。",
+          "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+          "version_date": "2026-01-01"
+        }
+      ]
+    }
+  ],
+  "fact_inventory": [
+    {
+      "fact_id": "P01:F01",
+      "material_id": "P01",
+      "text": "支持字幕",
+      "source_text": "产品支持字幕。",
+      "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+      "version_date": "2026-01-01"
+    }
+  ],
+  "revisions": [],
+  "editable_draft": null,
+  "duration_check": null,
+  "rule_check": null,
+  "duration_history": [],
+  "rule_history": [],
+  "final_script": null,
+  "tool_errors": [],
+  "status": "incomplete",
+  "gaps": [
+    "本轮尚未完成所有检查。"
+  ],
+  "message": "未形成可交付的通过脚本。",
+  "trace": [
+    {
+      "step": 1,
+      "tool": "inspect_request",
+      "arguments": {
+        "reason": "先核对五项关键输入和平台。"
+      },
+      "decision_basis": "先核对五项关键输入和平台。",
+      "observation_summary": {
+        "ok": true,
+        "missing_fields": []
+      },
+      "observation": {
+        "ok": true,
+        "request": {
+          "request_id": "step_limit",
+          "theme": "字幕创作",
+          "audience": "短视频创作者",
+          "platform": "抖音",
+          "target_seconds": 30,
+          "style": "简洁清晰"
+        },
+        "missing_fields": [],
+        "supported_platforms": [
+          "抖音",
+          "小红书",
+          "视频号"
+        ],
+        "profiles": [
+          "detailed",
+          "compact",
+          "minimal"
+        ],
+        "target_semantics": "estimated total must not exceed target; not exact rendered-video length"
+      },
+      "next_action": "search_materials"
+    },
+    {
+      "step": 2,
+      "tool": "search_materials",
+      "arguments": {
+        "reason": "输入完整，按主题检索可核验素材。",
+        "query": "字幕创作",
+        "strategy": "keyword"
+      },
+      "decision_basis": "输入完整，按主题检索可核验素材。",
+      "observation_summary": {
+        "ok": true,
+        "material_ids": [
+          "P01"
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "query": "字幕创作",
+        "strategy": "keyword",
+        "effective_query": "字幕创作",
+        "hits": [
+          {
+            "material_id": "P01",
+            "title": "视频工具字幕事实卡",
+            "version_date": "2026-01-01",
+            "fact_ids": [
+              "P01:F01"
+            ]
+          }
+        ]
+      },
+      "next_action": "read_material"
+    },
+    {
+      "step": 3,
+      "tool": "read_material",
+      "arguments": {
+        "reason": "索引命中后读取原文与事实ID，不能只凭标题生成。",
+        "material_id": "P01"
+      },
+      "decision_basis": "索引命中后读取原文与事实ID，不能只凭标题生成。",
+      "observation_summary": {
+        "ok": true,
+        "read_material_id": "P01"
+      },
+      "observation": {
+        "ok": true,
+        "material": {
+          "material_id": "P01",
+          "title": "视频工具字幕事实卡",
+          "source_text": "产品支持字幕。",
+          "facts": [
+            {
+              "fact_id": "P01:F01",
+              "material_id": "P01",
+              "text": "支持字幕",
+              "source_text": "产品支持字幕。",
+              "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+              "version_date": "2026-01-01"
+            }
+          ]
+        }
+      },
+      "next_action": "stop:step_limit_reached"
+    }
+  ]
+}

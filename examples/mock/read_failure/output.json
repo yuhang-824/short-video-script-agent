@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T05:49:49+00:00",
+  "execution_mode": "mock",
+  "model": "offline-video-policy-v1",
+  "requested_model": "offline-video-policy-v1",
+  "catalog_version": "synthetic-video-v1",
+  "catalog_digest": "b3586b895596d632ee949e6ef1f02aeef8589147332e5f22901cc8aa46b722d2",
+  "evidence_boundary": "Mock verifies workflow and deterministic guards only; not real model decisions or creative quality.",
+  "steps_taken": 4,
+  "max_steps": 32,
+  "stop_reason": "model_concluded:failed",
+  "model_api_usage": null,
+  "request": {
+    "request_id": "read_failure",
+    "theme": "字幕创作",
+    "audience": "短视频创作者",
+    "platform": "抖音",
+    "target_seconds": 30,
+    "style": "简洁清晰"
+  },
+  "missing_fields": [],
+  "searches": [
+    {
+      "query": "字幕创作",
+      "strategy": "keyword",
+      "effective_query": "字幕创作",
+      "hits": [
+        {
+          "material_id": "P01",
+          "title": "视频工具字幕事实卡",
+          "version_date": "2026-01-01",
+          "fact_ids": [
+            "P01:F01"
+          ]
+        }
+      ]
+    }
+  ],
+  "materials_read": [],
+  "fact_inventory": [],
+  "revisions": [],
+  "editable_draft": null,
+  "duration_check": null,
+  "rule_check": null,
+  "duration_history": [],
+  "rule_history": [],
+  "final_script": null,
+  "tool_errors": [
+    {
+      "tool": "read_material",
+      "material_id": "P01",
+      "error": "injected_tool_failure"
+    }
+  ],
+  "status": "failed",
+  "gaps": [
+    "需要恢复失败工具并重新核验草稿。"
+  ],
+  "message": "未交付通过脚本；已有草稿与实际检查结果保留。",
+  "trace": [
+    {
+      "step": 1,
+      "tool": "inspect_request",
+      "arguments": {
+        "reason": "先核对五项关键输入和平台。"
+      },
+      "decision_basis": "先核对五项关键输入和平台。",
+      "observation_summary": {
+        "ok": true,
+        "missing_fields": []
+      },
+      "observation": {
+        "ok": true,
+        "request": {
+          "request_id": "read_failure",
+          "theme": "字幕创作",
+          "audience": "短视频创作者",
+          "platform": "抖音",
+          "target_seconds": 30,
+          "style": "简洁清晰"
+        },
+        "missing_fields": [],
+        "supported_platforms": [
+          "抖音",
+          "小红书",
+          "视频号"
+        ],
+        "profiles": [
+          "detailed",
+          "compact",
+          "minimal"
+        ],
+        "target_semantics": "estimated total must not exceed target; not exact rendered-video length"
+      },
+      "next_action": "search_materials"
+    },
+    {
+      "step": 2,
+      "tool": "search_materials",
+      "arguments": {
+        "reason": "输入完整，按主题检索可核验素材。",
+        "query": "字幕创作",
+        "strategy": "keyword"
+      },
+      "decision_basis": "输入完整，按主题检索可核验素材。",
+      "observation_summary": {
+        "ok": true,
+        "material_ids": [
+          "P01"
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "query": "字幕创作",
+        "strategy": "keyword",
+        "effective_query": "字幕创作",
+        "hits": [
+          {
+            "material_id": "P01",
+            "title": "视频工具字幕事实卡",
+            "version_date": "2026-01-01",
+            "fact_ids": [
+              "P01:F01"
+            ]
+          }
+        ]
+      },
+      "next_action": "read_material"
+    },
+    {
+      "step": 3,
+      "tool": "read_material",
+      "arguments": {
+        "reason": "索引命中后读取原文与事实ID，不能只凭标题生成。",
+        "material_id": "P01"
+      },
+      "decision_basis": "索引命中后读取原文与事实ID，不能只凭标题生成。",
+      "observation_summary": {
+        "ok": false,
+        "error": "read_failed"
+      },
+      "observation": {
+        "ok": false,
+        "error": "read_failed"
+      },
+      "next_action": "stop"
+    },
+    {
+      "step": 4,
+      "tool": "stop",
+      "arguments": {
+        "reason": "实际工具返回失败，停止并保留已有结果。",
+        "outcome": "tool_failure"
+      },
+      "decision_basis": "实际工具返回失败，停止并保留已有结果。",
+      "observation_summary": {
+        "ok": true,
+        "status": "failed"
+      },
+      "observation": {
+        "ok": true,
+        "status": "failed",
+        "gaps": [
+          "需要恢复失败工具并重新核验草稿。"
+        ],
+        "message": "未交付通过脚本；已有草稿与实际检查结果保留。"
+      },
+      "next_action": "end"
+    }
+  ]
+}

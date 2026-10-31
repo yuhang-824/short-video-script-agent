@@ -1,0 +1,80 @@
+UTC: 2026-10-31T05:49:49+00:00
+Command: python -m unittest discover -s tests -v
+Exit code: 0
+
+test_boolean_hold_is_invalid (test_agent.Boundaries.test_boolean_hold_is_invalid) ... ok
+test_catalog_fact_must_appear_in_source (test_agent.Boundaries.test_catalog_fact_must_appear_in_source) ... ok
+test_changed_platform_rejected (test_agent.Boundaries.test_changed_platform_rejected) ... ok
+test_current_script_approved (test_agent.Boundaries.test_current_script_approved) ... ok
+test_duplicate_shot_id_rejected (test_agent.Boundaries.test_duplicate_shot_id_rejected) ... ok
+test_duration_is_sum_not_scenario_constant (test_agent.Boundaries.test_duration_is_sum_not_scenario_constant) ... ok
+test_empty_product_facts_rejected (test_agent.Boundaries.test_empty_product_facts_rejected) ... ok
+test_false_title_rejected (test_agent.Boundaries.test_false_title_rejected) ... ok
+test_false_visual_rejected (test_agent.Boundaries.test_false_visual_rejected) ... ok
+test_forged_fact_with_valid_id_is_rejected (test_agent.Boundaries.test_forged_fact_with_valid_id_is_rejected) ... ok
+test_invalid_shot_type_returns_rejection (test_agent.Boundaries.test_invalid_shot_type_returns_rejection) ... ok
+test_malformed_input_rejected (test_agent.Boundaries.test_malformed_input_rejected) ... ok
+test_malicious_repeated_finish_is_bounded (test_agent.Boundaries.test_malicious_repeated_finish_is_bounded) ... ok
+test_manual_duration_over_limit (test_agent.Boundaries.test_manual_duration_over_limit) ... ok
+test_model_error_retains_incomplete_state (test_agent.Boundaries.test_model_error_retains_incomplete_state) ... ok
+test_modified_source_invalidates_old_fact_claim (test_agent.Boundaries.test_modified_source_invalidates_old_fact_claim) ... ok
+test_new_creative_copy_needs_review (test_agent.Boundaries.test_new_creative_copy_needs_review) ... ok
+test_no_real_key_does_not_create_mock (test_agent.Boundaries.test_no_real_key_does_not_create_mock) ... ok
+test_same_characters_longer_duration_under_slower_rate (test_agent.Boundaries.test_same_characters_longer_duration_under_slower_rate) ... ok
+test_subtitle_is_separately_checked (test_agent.Boundaries.test_subtitle_is_separately_checked) ... ok
+test_target_cannot_be_inserted_in_script (test_agent.Boundaries.test_target_cannot_be_inserted_in_script) ... ok
+test_trace_uses_actual_observation_and_next_action (test_agent.Boundaries.test_trace_uses_actual_observation_and_next_action) ... ok
+test_unknown_fact_reference_rejected (test_agent.Boundaries.test_unknown_fact_reference_rejected) ... ok
+test_duration_revision (test_agent.Scenarios.test_duration_revision) ... ok
+test_impossible_duration (test_agent.Scenarios.test_impossible_duration) ... ok
+test_minimal_script (test_agent.Scenarios.test_minimal_script) ... ok
+test_missing_audience (test_agent.Scenarios.test_missing_audience) ... ok
+test_missing_information (test_agent.Scenarios.test_missing_information) ... ok
+test_missing_style (test_agent.Scenarios.test_missing_style) ... ok
+test_no_materials (test_agent.Scenarios.test_no_materials) ... ok
+test_normal (test_agent.Scenarios.test_normal) ... ok
+test_query_rewrite (test_agent.Scenarios.test_query_rewrite) ... ok
+test_read_failure (test_agent.Scenarios.test_read_failure) ... ok
+test_rule_revision (test_agent.Scenarios.test_rule_revision) ... ok
+test_rule_unmet (test_agent.Scenarios.test_rule_unmet) ... ok
+test_rules_failure (test_agent.Scenarios.test_rules_failure) ... ok
+test_search_failure (test_agent.Scenarios.test_search_failure) ... ok
+test_slow_speech (test_agent.Scenarios.test_slow_speech) ... ok
+test_source_changed (test_agent.Scenarios.test_source_changed) ... ok
+test_step_limit (test_agent.Scenarios.test_step_limit) ... ok
+test_tool_failure (test_agent.Scenarios.test_tool_failure) ... ok
+test_trim_pauses (test_agent.Scenarios.test_trim_pauses) ... ok
+test_unrelated_theme (test_agent.Scenarios.test_unrelated_theme) ... ok
+test_unsupported_claim (test_agent.Scenarios.test_unsupported_claim) ... ok
+test_unsupported_platform (test_agent.Scenarios.test_unsupported_platform) ... ok
+test_cannot_claim_tool_failure_without_error (test_agent.ToolGuards.test_cannot_claim_tool_failure_without_error) ... ok
+test_cannot_request_missing_materials_without_supplement_search (test_agent.ToolGuards.test_cannot_request_missing_materials_without_supplement_search) ... ok
+test_draft_must_follow_read (test_agent.ToolGuards.test_draft_must_follow_read) ... ok
+test_duplicate_fact_arguments_rejected (test_agent.ToolGuards.test_duplicate_fact_arguments_rejected) ... ok
+test_finish_requires_both_checks (test_agent.ToolGuards.test_finish_requires_both_checks) ... ok
+test_read_must_follow_search (test_agent.ToolGuards.test_read_must_follow_search) ... ok
+test_revision_invalidates_both_checks (test_agent.ToolGuards.test_revision_invalidates_both_checks) ... ok
+test_stale_checks_cannot_finish (test_agent.ToolGuards.test_stale_checks_cannot_finish) ... ok
+test_unknown_tools_and_arguments_rejected (test_agent.ToolGuards.test_unknown_tools_and_arguments_rejected) ... ok
+test_broken_protocol_is_an_explicit_model_error (test_transport.Transport.test_broken_protocol_is_an_explicit_model_error) ... ok
+test_free_text_or_truncated_responses_cannot_bypass_tools (test_transport.Transport.test_free_text_or_truncated_responses_cannot_bypass_tools) ... ok
+test_http_failure_does_not_echo_provider_body (test_transport.Transport.test_http_failure_does_not_echo_provider_body) ... ok
+test_openai_compatible_call_and_observation_roundtrip (test_transport.Transport.test_openai_compatible_call_and_observation_roundtrip) ... ok
+test_bad_run_id_rejected (test_web.Web.test_bad_run_id_rejected) ... ok
+test_cannot_override_request_via_edit (test_web.Web.test_cannot_override_request_via_edit) ... ok
+test_changed_catalog_requires_new_generation (test_web.Web.test_changed_catalog_requires_new_generation) ... ok
+test_config_and_static_assets (test_web.Web.test_config_and_static_assets) ... ok
+test_edit_duration_rejected (test_web.Web.test_edit_duration_rejected) ... ok
+test_edit_recomputed_and_stored_separately (test_web.Web.test_edit_recomputed_and_stored_separately) ... ok
+test_edit_unverified_claim_rejected_on_server (test_web.Web.test_edit_unverified_claim_rejected_on_server) ... ok
+test_no_cross_origin_execution (test_web.Web.test_no_cross_origin_execution) ... ok
+test_no_env_or_path_traversal (test_web.Web.test_no_env_or_path_traversal) ... ok
+test_no_materials_exposes_gap (test_web.Web.test_no_materials_exposes_gap) ... ok
+test_only_loopback_host (test_web.Web.test_only_loopback_host) ... ok
+test_real_run_roundtrip_and_history (test_web.Web.test_real_run_roundtrip_and_history) ... ok
+test_tool_failure_not_success (test_web.Web.test_tool_failure_not_success) ... ok
+
+----------------------------------------------------------------------
+Ran 71 tests in 0.770s
+
+OK

@@ -1,0 +1,1126 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T05:49:49+00:00",
+  "execution_mode": "mock",
+  "model": "offline-video-policy-v1",
+  "requested_model": "offline-video-policy-v1",
+  "catalog_version": "synthetic-video-v1",
+  "catalog_digest": "53c4ef46d6f65b47ade0310d604b948c5de7fc7df1fab67e670d476e73abc877",
+  "evidence_boundary": "Mock verifies workflow and deterministic guards only; not real model decisions or creative quality.",
+  "steps_taken": 13,
+  "max_steps": 32,
+  "stop_reason": "model_concluded:constraints_unmet",
+  "model_api_usage": null,
+  "request": {
+    "request_id": "rule_unmet",
+    "theme": "字幕创作",
+    "audience": "短视频创作者",
+    "platform": "抖音",
+    "target_seconds": 45,
+    "style": "简洁清晰"
+  },
+  "missing_fields": [],
+  "searches": [
+    {
+      "query": "字幕创作",
+      "strategy": "keyword",
+      "effective_query": "字幕创作",
+      "hits": [
+        {
+          "material_id": "P01",
+          "title": "视频工具字幕事实卡",
+          "version_date": "2026-01-01",
+          "fact_ids": [
+            "P01:F01"
+          ]
+        }
+      ]
+    }
+  ],
+  "materials_read": [
+    {
+      "material_id": "P01",
+      "title": "视频工具字幕事实卡",
+      "source_text": "产品支持字幕。",
+      "facts": [
+        {
+          "fact_id": "P01:F01",
+          "material_id": "P01",
+          "text": "支持字幕",
+          "source_text": "产品支持字幕。",
+          "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+          "version_date": "2026-01-01"
+        }
+      ]
+    }
+  ],
+  "fact_inventory": [
+    {
+      "fact_id": "P01:F01",
+      "material_id": "P01",
+      "text": "支持字幕",
+      "source_text": "产品支持字幕。",
+      "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+      "version_date": "2026-01-01"
+    }
+  ],
+  "revisions": [
+    {
+      "operation": "draft_script",
+      "draft": {
+        "title": "字幕创作小灵感",
+        "profile": "detailed",
+        "revision": 1,
+        "audience": "短视频创作者",
+        "platform": "抖音",
+        "style": "简洁清晰",
+        "shots": [
+          {
+            "shot_id": "S01",
+            "visual_type": "title_card",
+            "visual": "展示主题标题卡片",
+            "narration": "想让你的视频更方便观看吗",
+            "subtitle": "想让你的视频更方便观看吗",
+            "hold_seconds": 6,
+            "fact_ids": []
+          },
+          {
+            "shot_id": "S02",
+            "visual_type": "intro_card",
+            "visual": "切换至功能介绍文字卡",
+            "narration": "这次只介绍素材中已确认的功能",
+            "subtitle": "这次只介绍素材中已确认的功能",
+            "hold_seconds": 7,
+            "fact_ids": []
+          },
+          {
+            "shot_id": "S03",
+            "visual_type": "fact_card",
+            "visual": "用文字卡展示已核实的产品事实",
+            "narration": "支持字幕",
+            "subtitle": "支持字幕",
+            "hold_seconds": 6,
+            "fact_ids": [
+              "P01:F01"
+            ]
+          },
+          {
+            "shot_id": "S04",
+            "visual_type": "cta_card",
+            "visual": "切换至创作邀请文字卡",
+            "narration": "选择适合自己的表达方式开始创作",
+            "subtitle": "选择适合自己的表达方式开始创作",
+            "hold_seconds": 7,
+            "fact_ids": []
+          }
+        ]
+      },
+      "draft_digest": "e5ca7f65f5e05253124b6b1ee3a5481217be55a5a5df8837a48735785f3614e5"
+    },
+    {
+      "operation": "revise_script:safe_copy",
+      "draft": {
+        "title": "字幕创作小灵感",
+        "profile": "compact",
+        "revision": 2,
+        "audience": "短视频创作者",
+        "platform": "抖音",
+        "style": "简洁清晰",
+        "shots": [
+          {
+            "shot_id": "S01",
+            "visual_type": "title_card",
+            "visual": "展示主题标题卡片",
+            "narration": "用字幕表达你的内容",
+            "subtitle": "用字幕表达你的内容",
+            "hold_seconds": 4,
+            "fact_ids": []
+          },
+          {
+            "shot_id": "S02",
+            "visual_type": "intro_card",
+            "visual": "切换至功能介绍文字卡",
+            "narration": "先看这项已确认的功能",
+            "subtitle": "先看这项已确认的功能",
+            "hold_seconds": 5,
+            "fact_ids": []
+          },
+          {
+            "shot_id": "S03",
+            "visual_type": "fact_card",
+            "visual": "用文字卡展示已核实的产品事实",
+            "narration": "支持字幕",
+            "subtitle": "支持字幕",
+            "hold_seconds": 4,
+            "fact_ids": [
+              "P01:F01"
+            ]
+          },
+          {
+            "shot_id": "S04",
+            "visual_type": "cta_card",
+            "visual": "切换至创作邀请文字卡",
+            "narration": "用自己的内容试试吧",
+            "subtitle": "用自己的内容试试吧",
+            "hold_seconds": 5,
+            "fact_ids": []
+          }
+        ]
+      },
+      "draft_digest": "d7779b03bcd6822140d6920c31f74e42999a1402001e2f8e91dabdbca2e68209"
+    },
+    {
+      "operation": "revise_script:safe_copy",
+      "draft": {
+        "title": "字幕创作小灵感",
+        "profile": "minimal",
+        "revision": 3,
+        "audience": "短视频创作者",
+        "platform": "抖音",
+        "style": "简洁清晰",
+        "shots": [
+          {
+            "shot_id": "S01",
+            "visual_type": "title_card",
+            "visual": "展示主题标题卡片",
+            "narration": "一起看个创作灵感",
+            "subtitle": "一起看个创作灵感",
+            "hold_seconds": 1,
+            "fact_ids": []
+          },
+          {
+            "shot_id": "S02",
+            "visual_type": "fact_card",
+            "visual": "用文字卡展示已核实的产品事实",
+            "narration": "支持字幕",
+            "subtitle": "支持字幕",
+            "hold_seconds": 1,
+            "fact_ids": [
+              "P01:F01"
+            ]
+          },
+          {
+            "shot_id": "S03",
+            "visual_type": "cta_card",
+            "visual": "切换至创作邀请文字卡",
+            "narration": "现在开始创作吧",
+            "subtitle": "现在开始创作吧",
+            "hold_seconds": 1,
+            "fact_ids": []
+          }
+        ]
+      },
+      "draft_digest": "805667de5b1f52bea1b61807ee4d9ae6f2104212337d6511018d39e4a6ce0b66"
+    }
+  ],
+  "editable_draft": {
+    "title": "字幕创作小灵感",
+    "profile": "minimal",
+    "revision": 3,
+    "audience": "短视频创作者",
+    "platform": "抖音",
+    "style": "简洁清晰",
+    "shots": [
+      {
+        "shot_id": "S01",
+        "visual_type": "title_card",
+        "visual": "展示主题标题卡片",
+        "narration": "一起看个创作灵感",
+        "subtitle": "一起看个创作灵感",
+        "hold_seconds": 1,
+        "fact_ids": []
+      },
+      {
+        "shot_id": "S02",
+        "visual_type": "fact_card",
+        "visual": "用文字卡展示已核实的产品事实",
+        "narration": "支持字幕",
+        "subtitle": "支持字幕",
+        "hold_seconds": 1,
+        "fact_ids": [
+          "P01:F01"
+        ]
+      },
+      {
+        "shot_id": "S03",
+        "visual_type": "cta_card",
+        "visual": "切换至创作邀请文字卡",
+        "narration": "现在开始创作吧",
+        "subtitle": "现在开始创作吧",
+        "hold_seconds": 1,
+        "fact_ids": []
+      }
+    ]
+  },
+  "duration_check": {
+    "ok": true,
+    "draft_digest": "805667de5b1f52bea1b61807ee4d9ae6f2104212337d6511018d39e4a6ce0b66",
+    "revision": 3,
+    "estimated_total_seconds": 8,
+    "target_seconds": 45,
+    "within_limit": true,
+    "over_seconds": 0,
+    "characters_per_second": 4,
+    "shots": [
+      {
+        "shot_id": "S01",
+        "readable_characters": 8,
+        "speech_seconds": 2,
+        "hold_seconds": 1,
+        "estimated_seconds": 3
+      },
+      {
+        "shot_id": "S02",
+        "readable_characters": 4,
+        "speech_seconds": 1,
+        "hold_seconds": 1,
+        "estimated_seconds": 2
+      },
+      {
+        "shot_id": "S03",
+        "readable_characters": 7,
+        "speech_seconds": 2,
+        "hold_seconds": 1,
+        "estimated_seconds": 3
+      }
+    ],
+    "semantics": "max(narration/subtitle/title character time, visual minimum) + hold; approximate, not rendered video"
+  },
+  "rule_check": {
+    "ok": true,
+    "passed": false,
+    "revision": 3,
+    "draft_digest": "805667de5b1f52bea1b61807ee4d9ae6f2104212337d6511018d39e4a6ce0b66",
+    "rules_version": "brand-v1",
+    "risks": [
+      {
+        "code": "brand_prohibited_term",
+        "term": "字幕"
+      }
+    ],
+    "citations": [
+      {
+        "shot_id": "S02",
+        "fact_id": "P01:F01",
+        "material_id": "P01",
+        "text": "支持字幕",
+        "source_text": "产品支持字幕。",
+        "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+        "version_date": "2026-01-01"
+      }
+    ],
+    "boundary": "strict known-neutral-copy and verbatim supported-fact validation; not general semantic entailment"
+  },
+  "duration_history": [
+    {
+      "ok": true,
+      "draft_digest": "e5ca7f65f5e05253124b6b1ee3a5481217be55a5a5df8837a48735785f3614e5",
+      "revision": 1,
+      "estimated_total_seconds": 38,
+      "target_seconds": 45,
+      "within_limit": true,
+      "over_seconds": 0,
+      "characters_per_second": 4,
+      "shots": [
+        {
+          "shot_id": "S01",
+          "readable_characters": 12,
+          "speech_seconds": 3,
+          "hold_seconds": 6,
+          "estimated_seconds": 9
+        },
+        {
+          "shot_id": "S02",
+          "readable_characters": 14,
+          "speech_seconds": 4,
+          "hold_seconds": 7,
+          "estimated_seconds": 11
+        },
+        {
+          "shot_id": "S03",
+          "readable_characters": 4,
+          "speech_seconds": 1,
+          "hold_seconds": 6,
+          "estimated_seconds": 7
+        },
+        {
+          "shot_id": "S04",
+          "readable_characters": 15,
+          "speech_seconds": 4,
+          "hold_seconds": 7,
+          "estimated_seconds": 11
+        }
+      ],
+      "semantics": "max(narration/subtitle/title character time, visual minimum) + hold; approximate, not rendered video"
+    },
+    {
+      "ok": true,
+      "draft_digest": "d7779b03bcd6822140d6920c31f74e42999a1402001e2f8e91dabdbca2e68209",
+      "revision": 2,
+      "estimated_total_seconds": 28,
+      "target_seconds": 45,
+      "within_limit": true,
+      "over_seconds": 0,
+      "characters_per_second": 4,
+      "shots": [
+        {
+          "shot_id": "S01",
+          "readable_characters": 9,
+          "speech_seconds": 3,
+          "hold_seconds": 4,
+          "estimated_seconds": 7
+        },
+        {
+          "shot_id": "S02",
+          "readable_characters": 10,
+          "speech_seconds": 3,
+          "hold_seconds": 5,
+          "estimated_seconds": 8
+        },
+        {
+          "shot_id": "S03",
+          "readable_characters": 4,
+          "speech_seconds": 1,
+          "hold_seconds": 4,
+          "estimated_seconds": 5
+        },
+        {
+          "shot_id": "S04",
+          "readable_characters": 9,
+          "speech_seconds": 3,
+          "hold_seconds": 5,
+          "estimated_seconds": 8
+        }
+      ],
+      "semantics": "max(narration/subtitle/title character time, visual minimum) + hold; approximate, not rendered video"
+    },
+    {
+      "ok": true,
+      "draft_digest": "805667de5b1f52bea1b61807ee4d9ae6f2104212337d6511018d39e4a6ce0b66",
+      "revision": 3,
+      "estimated_total_seconds": 8,
+      "target_seconds": 45,
+      "within_limit": true,
+      "over_seconds": 0,
+      "characters_per_second": 4,
+      "shots": [
+        {
+          "shot_id": "S01",
+          "readable_characters": 8,
+          "speech_seconds": 2,
+          "hold_seconds": 1,
+          "estimated_seconds": 3
+        },
+        {
+          "shot_id": "S02",
+          "readable_characters": 4,
+          "speech_seconds": 1,
+          "hold_seconds": 1,
+          "estimated_seconds": 2
+        },
+        {
+          "shot_id": "S03",
+          "readable_characters": 7,
+          "speech_seconds": 2,
+          "hold_seconds": 1,
+          "estimated_seconds": 3
+        }
+      ],
+      "semantics": "max(narration/subtitle/title character time, visual minimum) + hold; approximate, not rendered video"
+    }
+  ],
+  "rule_history": [
+    {
+      "ok": true,
+      "passed": false,
+      "revision": 1,
+      "draft_digest": "e5ca7f65f5e05253124b6b1ee3a5481217be55a5a5df8837a48735785f3614e5",
+      "rules_version": "brand-v1",
+      "risks": [
+        {
+          "code": "brand_prohibited_term",
+          "term": "字幕"
+        }
+      ],
+      "citations": [
+        {
+          "shot_id": "S03",
+          "fact_id": "P01:F01",
+          "material_id": "P01",
+          "text": "支持字幕",
+          "source_text": "产品支持字幕。",
+          "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+          "version_date": "2026-01-01"
+        }
+      ],
+      "boundary": "strict known-neutral-copy and verbatim supported-fact validation; not general semantic entailment"
+    },
+    {
+      "ok": true,
+      "passed": false,
+      "revision": 2,
+      "draft_digest": "d7779b03bcd6822140d6920c31f74e42999a1402001e2f8e91dabdbca2e68209",
+      "rules_version": "brand-v1",
+      "risks": [
+        {
+          "code": "brand_prohibited_term",
+          "term": "字幕"
+        }
+      ],
+      "citations": [
+        {
+          "shot_id": "S03",
+          "fact_id": "P01:F01",
+          "material_id": "P01",
+          "text": "支持字幕",
+          "source_text": "产品支持字幕。",
+          "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+          "version_date": "2026-01-01"
+        }
+      ],
+      "boundary": "strict known-neutral-copy and verbatim supported-fact validation; not general semantic entailment"
+    },
+    {
+      "ok": true,
+      "passed": false,
+      "revision": 3,
+      "draft_digest": "805667de5b1f52bea1b61807ee4d9ae6f2104212337d6511018d39e4a6ce0b66",
+      "rules_version": "brand-v1",
+      "risks": [
+        {
+          "code": "brand_prohibited_term",
+          "term": "字幕"
+        }
+      ],
+      "citations": [
+        {
+          "shot_id": "S02",
+          "fact_id": "P01:F01",
+          "material_id": "P01",
+          "text": "支持字幕",
+          "source_text": "产品支持字幕。",
+          "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+          "version_date": "2026-01-01"
+        }
+      ],
+      "boundary": "strict known-neutral-copy and verbatim supported-fact validation; not general semantic entailment"
+    }
+  ],
+  "final_script": null,
+  "tool_errors": [],
+  "status": "constraints_unmet",
+  "gaps": [
+    "修订后仍不符合品牌或事实规则，需要补充素材或人工调整。"
+  ],
+  "message": "未交付通过脚本；已有草稿与实际检查结果保留。",
+  "trace": [
+    {
+      "step": 1,
+      "tool": "inspect_request",
+      "arguments": {
+        "reason": "先核对五项关键输入和平台。"
+      },
+      "decision_basis": "先核对五项关键输入和平台。",
+      "observation_summary": {
+        "ok": true,
+        "missing_fields": []
+      },
+      "observation": {
+        "ok": true,
+        "request": {
+          "request_id": "rule_unmet",
+          "theme": "字幕创作",
+          "audience": "短视频创作者",
+          "platform": "抖音",
+          "target_seconds": 45,
+          "style": "简洁清晰"
+        },
+        "missing_fields": [],
+        "supported_platforms": [
+          "抖音",
+          "小红书",
+          "视频号"
+        ],
+        "profiles": [
+          "detailed",
+          "compact",
+          "minimal"
+        ],
+        "target_semantics": "estimated total must not exceed target; not exact rendered-video length"
+      },
+      "next_action": "search_materials"
+    },
+    {
+      "step": 2,
+      "tool": "search_materials",
+      "arguments": {
+        "reason": "输入完整，按主题检索可核验素材。",
+        "query": "字幕创作",
+        "strategy": "keyword"
+      },
+      "decision_basis": "输入完整，按主题检索可核验素材。",
+      "observation_summary": {
+        "ok": true,
+        "material_ids": [
+          "P01"
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "query": "字幕创作",
+        "strategy": "keyword",
+        "effective_query": "字幕创作",
+        "hits": [
+          {
+            "material_id": "P01",
+            "title": "视频工具字幕事实卡",
+            "version_date": "2026-01-01",
+            "fact_ids": [
+              "P01:F01"
+            ]
+          }
+        ]
+      },
+      "next_action": "read_material"
+    },
+    {
+      "step": 3,
+      "tool": "read_material",
+      "arguments": {
+        "reason": "索引命中后读取原文与事实ID，不能只凭标题生成。",
+        "material_id": "P01"
+      },
+      "decision_basis": "索引命中后读取原文与事实ID，不能只凭标题生成。",
+      "observation_summary": {
+        "ok": true,
+        "read_material_id": "P01"
+      },
+      "observation": {
+        "ok": true,
+        "material": {
+          "material_id": "P01",
+          "title": "视频工具字幕事实卡",
+          "source_text": "产品支持字幕。",
+          "facts": [
+            {
+              "fact_id": "P01:F01",
+              "material_id": "P01",
+              "text": "支持字幕",
+              "source_text": "产品支持字幕。",
+              "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+              "version_date": "2026-01-01"
+            }
+          ]
+        }
+      },
+      "next_action": "draft_script"
+    },
+    {
+      "step": 4,
+      "tool": "draft_script",
+      "arguments": {
+        "reason": "已读事实可作为产品主张，先生成详细分镜再实际检查。",
+        "profile": "detailed",
+        "fact_ids": [
+          "P01:F01"
+        ]
+      },
+      "decision_basis": "已读事实可作为产品主张，先生成详细分镜再实际检查。",
+      "observation_summary": {
+        "ok": true,
+        "checks_invalidated": true,
+        "revision": 1,
+        "profile": "detailed",
+        "shot_count": 4
+      },
+      "observation": {
+        "ok": true,
+        "draft": {
+          "title": "字幕创作小灵感",
+          "profile": "detailed",
+          "revision": 1,
+          "audience": "短视频创作者",
+          "platform": "抖音",
+          "style": "简洁清晰",
+          "shots": [
+            {
+              "shot_id": "S01",
+              "visual_type": "title_card",
+              "visual": "展示主题标题卡片",
+              "narration": "想让你的视频更方便观看吗",
+              "subtitle": "想让你的视频更方便观看吗",
+              "hold_seconds": 6,
+              "fact_ids": []
+            },
+            {
+              "shot_id": "S02",
+              "visual_type": "intro_card",
+              "visual": "切换至功能介绍文字卡",
+              "narration": "这次只介绍素材中已确认的功能",
+              "subtitle": "这次只介绍素材中已确认的功能",
+              "hold_seconds": 7,
+              "fact_ids": []
+            },
+            {
+              "shot_id": "S03",
+              "visual_type": "fact_card",
+              "visual": "用文字卡展示已核实的产品事实",
+              "narration": "支持字幕",
+              "subtitle": "支持字幕",
+              "hold_seconds": 6,
+              "fact_ids": [
+                "P01:F01"
+              ]
+            },
+            {
+              "shot_id": "S04",
+              "visual_type": "cta_card",
+              "visual": "切换至创作邀请文字卡",
+              "narration": "选择适合自己的表达方式开始创作",
+              "subtitle": "选择适合自己的表达方式开始创作",
+              "hold_seconds": 7,
+              "fact_ids": []
+            }
+          ]
+        },
+        "draft_digest": "e5ca7f65f5e05253124b6b1ee3a5481217be55a5a5df8837a48735785f3614e5",
+        "checks_invalidated": true
+      },
+      "next_action": "estimate_duration"
+    },
+    {
+      "step": 5,
+      "tool": "estimate_duration",
+      "arguments": {
+        "reason": "当前版本已改变，重新逐镜计算总时长。"
+      },
+      "decision_basis": "当前版本已改变，重新逐镜计算总时长。",
+      "observation_summary": {
+        "ok": true,
+        "estimated_total_seconds": 38,
+        "within_limit": true
+      },
+      "observation": {
+        "ok": true,
+        "draft_digest": "e5ca7f65f5e05253124b6b1ee3a5481217be55a5a5df8837a48735785f3614e5",
+        "revision": 1,
+        "estimated_total_seconds": 38,
+        "target_seconds": 45,
+        "within_limit": true,
+        "over_seconds": 0,
+        "characters_per_second": 4,
+        "shots": [
+          {
+            "shot_id": "S01",
+            "readable_characters": 12,
+            "speech_seconds": 3,
+            "hold_seconds": 6,
+            "estimated_seconds": 9
+          },
+          {
+            "shot_id": "S02",
+            "readable_characters": 14,
+            "speech_seconds": 4,
+            "hold_seconds": 7,
+            "estimated_seconds": 11
+          },
+          {
+            "shot_id": "S03",
+            "readable_characters": 4,
+            "speech_seconds": 1,
+            "hold_seconds": 6,
+            "estimated_seconds": 7
+          },
+          {
+            "shot_id": "S04",
+            "readable_characters": 15,
+            "speech_seconds": 4,
+            "hold_seconds": 7,
+            "estimated_seconds": 11
+          }
+        ],
+        "semantics": "max(narration/subtitle/title character time, visual minimum) + hold; approximate, not rendered video"
+      },
+      "next_action": "check_brand_rules"
+    },
+    {
+      "step": 6,
+      "tool": "check_brand_rules",
+      "arguments": {
+        "reason": "当前版本预计时长合格，核对事实引用及品牌规则。"
+      },
+      "decision_basis": "当前版本预计时长合格，核对事实引用及品牌规则。",
+      "observation_summary": {
+        "ok": true,
+        "passed": false,
+        "risk_codes": [
+          "brand_prohibited_term"
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "passed": false,
+        "revision": 1,
+        "draft_digest": "e5ca7f65f5e05253124b6b1ee3a5481217be55a5a5df8837a48735785f3614e5",
+        "rules_version": "brand-v1",
+        "risks": [
+          {
+            "code": "brand_prohibited_term",
+            "term": "字幕"
+          }
+        ],
+        "citations": [
+          {
+            "shot_id": "S03",
+            "fact_id": "P01:F01",
+            "material_id": "P01",
+            "text": "支持字幕",
+            "source_text": "产品支持字幕。",
+            "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+            "version_date": "2026-01-01"
+          }
+        ],
+        "boundary": "strict known-neutral-copy and verbatim supported-fact validation; not general semantic entailment"
+      },
+      "next_action": "revise_script"
+    },
+    {
+      "step": 7,
+      "tool": "revise_script",
+      "arguments": {
+        "reason": "当前检查存在风险，改为更精简的安全文案并重新检查。",
+        "mode": "safe_copy"
+      },
+      "decision_basis": "当前检查存在风险，改为更精简的安全文案并重新检查。",
+      "observation_summary": {
+        "ok": true,
+        "checks_invalidated": true,
+        "revision": 2,
+        "profile": "compact",
+        "shot_count": 4
+      },
+      "observation": {
+        "ok": true,
+        "draft": {
+          "title": "字幕创作小灵感",
+          "profile": "compact",
+          "revision": 2,
+          "audience": "短视频创作者",
+          "platform": "抖音",
+          "style": "简洁清晰",
+          "shots": [
+            {
+              "shot_id": "S01",
+              "visual_type": "title_card",
+              "visual": "展示主题标题卡片",
+              "narration": "用字幕表达你的内容",
+              "subtitle": "用字幕表达你的内容",
+              "hold_seconds": 4,
+              "fact_ids": []
+            },
+            {
+              "shot_id": "S02",
+              "visual_type": "intro_card",
+              "visual": "切换至功能介绍文字卡",
+              "narration": "先看这项已确认的功能",
+              "subtitle": "先看这项已确认的功能",
+              "hold_seconds": 5,
+              "fact_ids": []
+            },
+            {
+              "shot_id": "S03",
+              "visual_type": "fact_card",
+              "visual": "用文字卡展示已核实的产品事实",
+              "narration": "支持字幕",
+              "subtitle": "支持字幕",
+              "hold_seconds": 4,
+              "fact_ids": [
+                "P01:F01"
+              ]
+            },
+            {
+              "shot_id": "S04",
+              "visual_type": "cta_card",
+              "visual": "切换至创作邀请文字卡",
+              "narration": "用自己的内容试试吧",
+              "subtitle": "用自己的内容试试吧",
+              "hold_seconds": 5,
+              "fact_ids": []
+            }
+          ]
+        },
+        "draft_digest": "d7779b03bcd6822140d6920c31f74e42999a1402001e2f8e91dabdbca2e68209",
+        "checks_invalidated": true
+      },
+      "next_action": "estimate_duration"
+    },
+    {
+      "step": 8,
+      "tool": "estimate_duration",
+      "arguments": {
+        "reason": "当前版本已改变，重新逐镜计算总时长。"
+      },
+      "decision_basis": "当前版本已改变，重新逐镜计算总时长。",
+      "observation_summary": {
+        "ok": true,
+        "estimated_total_seconds": 28,
+        "within_limit": true
+      },
+      "observation": {
+        "ok": true,
+        "draft_digest": "d7779b03bcd6822140d6920c31f74e42999a1402001e2f8e91dabdbca2e68209",
+        "revision": 2,
+        "estimated_total_seconds": 28,
+        "target_seconds": 45,
+        "within_limit": true,
+        "over_seconds": 0,
+        "characters_per_second": 4,
+        "shots": [
+          {
+            "shot_id": "S01",
+            "readable_characters": 9,
+            "speech_seconds": 3,
+            "hold_seconds": 4,
+            "estimated_seconds": 7
+          },
+          {
+            "shot_id": "S02",
+            "readable_characters": 10,
+            "speech_seconds": 3,
+            "hold_seconds": 5,
+            "estimated_seconds": 8
+          },
+          {
+            "shot_id": "S03",
+            "readable_characters": 4,
+            "speech_seconds": 1,
+            "hold_seconds": 4,
+            "estimated_seconds": 5
+          },
+          {
+            "shot_id": "S04",
+            "readable_characters": 9,
+            "speech_seconds": 3,
+            "hold_seconds": 5,
+            "estimated_seconds": 8
+          }
+        ],
+        "semantics": "max(narration/subtitle/title character time, visual minimum) + hold; approximate, not rendered video"
+      },
+      "next_action": "check_brand_rules"
+    },
+    {
+      "step": 9,
+      "tool": "check_brand_rules",
+      "arguments": {
+        "reason": "当前版本预计时长合格，核对事实引用及品牌规则。"
+      },
+      "decision_basis": "当前版本预计时长合格，核对事实引用及品牌规则。",
+      "observation_summary": {
+        "ok": true,
+        "passed": false,
+        "risk_codes": [
+          "brand_prohibited_term"
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "passed": false,
+        "revision": 2,
+        "draft_digest": "d7779b03bcd6822140d6920c31f74e42999a1402001e2f8e91dabdbca2e68209",
+        "rules_version": "brand-v1",
+        "risks": [
+          {
+            "code": "brand_prohibited_term",
+            "term": "字幕"
+          }
+        ],
+        "citations": [
+          {
+            "shot_id": "S03",
+            "fact_id": "P01:F01",
+            "material_id": "P01",
+            "text": "支持字幕",
+            "source_text": "产品支持字幕。",
+            "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+            "version_date": "2026-01-01"
+          }
+        ],
+        "boundary": "strict known-neutral-copy and verbatim supported-fact validation; not general semantic entailment"
+      },
+      "next_action": "revise_script"
+    },
+    {
+      "step": 10,
+      "tool": "revise_script",
+      "arguments": {
+        "reason": "当前检查存在风险，改为更精简的安全文案并重新检查。",
+        "mode": "safe_copy"
+      },
+      "decision_basis": "当前检查存在风险，改为更精简的安全文案并重新检查。",
+      "observation_summary": {
+        "ok": true,
+        "checks_invalidated": true,
+        "revision": 3,
+        "profile": "minimal",
+        "shot_count": 3
+      },
+      "observation": {
+        "ok": true,
+        "draft": {
+          "title": "字幕创作小灵感",
+          "profile": "minimal",
+          "revision": 3,
+          "audience": "短视频创作者",
+          "platform": "抖音",
+          "style": "简洁清晰",
+          "shots": [
+            {
+              "shot_id": "S01",
+              "visual_type": "title_card",
+              "visual": "展示主题标题卡片",
+              "narration": "一起看个创作灵感",
+              "subtitle": "一起看个创作灵感",
+              "hold_seconds": 1,
+              "fact_ids": []
+            },
+            {
+              "shot_id": "S02",
+              "visual_type": "fact_card",
+              "visual": "用文字卡展示已核实的产品事实",
+              "narration": "支持字幕",
+              "subtitle": "支持字幕",
+              "hold_seconds": 1,
+              "fact_ids": [
+                "P01:F01"
+              ]
+            },
+            {
+              "shot_id": "S03",
+              "visual_type": "cta_card",
+              "visual": "切换至创作邀请文字卡",
+              "narration": "现在开始创作吧",
+              "subtitle": "现在开始创作吧",
+              "hold_seconds": 1,
+              "fact_ids": []
+            }
+          ]
+        },
+        "draft_digest": "805667de5b1f52bea1b61807ee4d9ae6f2104212337d6511018d39e4a6ce0b66",
+        "checks_invalidated": true
+      },
+      "next_action": "estimate_duration"
+    },
+    {
+      "step": 11,
+      "tool": "estimate_duration",
+      "arguments": {
+        "reason": "当前版本已改变，重新逐镜计算总时长。"
+      },
+      "decision_basis": "当前版本已改变，重新逐镜计算总时长。",
+      "observation_summary": {
+        "ok": true,
+        "estimated_total_seconds": 8,
+        "within_limit": true
+      },
+      "observation": {
+        "ok": true,
+        "draft_digest": "805667de5b1f52bea1b61807ee4d9ae6f2104212337d6511018d39e4a6ce0b66",
+        "revision": 3,
+        "estimated_total_seconds": 8,
+        "target_seconds": 45,
+        "within_limit": true,
+        "over_seconds": 0,
+        "characters_per_second": 4,
+        "shots": [
+          {
+            "shot_id": "S01",
+            "readable_characters": 8,
+            "speech_seconds": 2,
+            "hold_seconds": 1,
+            "estimated_seconds": 3
+          },
+          {
+            "shot_id": "S02",
+            "readable_characters": 4,
+            "speech_seconds": 1,
+            "hold_seconds": 1,
+            "estimated_seconds": 2
+          },
+          {
+            "shot_id": "S03",
+            "readable_characters": 7,
+            "speech_seconds": 2,
+            "hold_seconds": 1,
+            "estimated_seconds": 3
+          }
+        ],
+        "semantics": "max(narration/subtitle/title character time, visual minimum) + hold; approximate, not rendered video"
+      },
+      "next_action": "check_brand_rules"
+    },
+    {
+      "step": 12,
+      "tool": "check_brand_rules",
+      "arguments": {
+        "reason": "当前版本预计时长合格，核对事实引用及品牌规则。"
+      },
+      "decision_basis": "当前版本预计时长合格，核对事实引用及品牌规则。",
+      "observation_summary": {
+        "ok": true,
+        "passed": false,
+        "risk_codes": [
+          "brand_prohibited_term"
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "passed": false,
+        "revision": 3,
+        "draft_digest": "805667de5b1f52bea1b61807ee4d9ae6f2104212337d6511018d39e4a6ce0b66",
+        "rules_version": "brand-v1",
+        "risks": [
+          {
+            "code": "brand_prohibited_term",
+            "term": "字幕"
+          }
+        ],
+        "citations": [
+          {
+            "shot_id": "S02",
+            "fact_id": "P01:F01",
+            "material_id": "P01",
+            "text": "支持字幕",
+            "source_text": "产品支持字幕。",
+            "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+            "version_date": "2026-01-01"
+          }
+        ],
+        "boundary": "strict known-neutral-copy and verbatim supported-fact validation; not general semantic entailment"
+      },
+      "next_action": "stop"
+    },
+    {
+      "step": 13,
+      "tool": "stop",
+      "arguments": {
+        "reason": "最简安全文案仍有规则风险，不能交付通过脚本。",
+        "outcome": "rules_unmet"
+      },
+      "decision_basis": "最简安全文案仍有规则风险，不能交付通过脚本。",
+      "observation_summary": {
+        "ok": true,
+        "status": "constraints_unmet"
+      },
+      "observation": {
+        "ok": true,
+        "status": "constraints_unmet",
+        "gaps": [
+          "修订后仍不符合品牌或事实规则，需要补充素材或人工调整。"
+        ],
+        "message": "未交付通过脚本；已有草稿与实际检查结果保留。"
+      },
+      "next_action": "end"
+    }
+  ]
+}

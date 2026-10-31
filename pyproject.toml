@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "short-video-script-agent"
+version = "0.1.0"
+description = "Source-grounded short video scripts with checked duration revisions"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+video-script = "video_script.cli:main"
+video-script-web = "video_script.web:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+video_script = ["web_assets/*"]

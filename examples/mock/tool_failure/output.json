@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T05:49:49+00:00",
+  "execution_mode": "mock",
+  "model": "offline-video-policy-v1",
+  "requested_model": "offline-video-policy-v1",
+  "catalog_version": "synthetic-video-v1",
+  "catalog_digest": "8911938b01fc8aebe54924004a32c28dcea71d3f51de92f06953e2ae3d3aa27b",
+  "evidence_boundary": "Mock verifies workflow and deterministic guards only; not real model decisions or creative quality.",
+  "steps_taken": 6,
+  "max_steps": 32,
+  "stop_reason": "model_concluded:failed",
+  "model_api_usage": null,
+  "request": {
+    "request_id": "tool_failure",
+    "theme": "字幕创作",
+    "audience": "短视频创作者",
+    "platform": "抖音",
+    "target_seconds": 30,
+    "style": "简洁清晰"
+  },
+  "missing_fields": [],
+  "searches": [
+    {
+      "query": "字幕创作",
+      "strategy": "keyword",
+      "effective_query": "字幕创作",
+      "hits": [
+        {
+          "material_id": "P01",
+          "title": "视频工具字幕事实卡",
+          "version_date": "2026-01-01",
+          "fact_ids": [
+            "P01:F01"
+          ]
+        }
+      ]
+    }
+  ],
+  "materials_read": [
+    {
+      "material_id": "P01",
+      "title": "视频工具字幕事实卡",
+      "source_text": "产品支持字幕。",
+      "facts": [
+        {
+          "fact_id": "P01:F01",
+          "material_id": "P01",
+          "text": "支持字幕",
+          "source_text": "产品支持字幕。",
+          "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+          "version_date": "2026-01-01"
+        }
+      ]
+    }
+  ],
+  "fact_inventory": [
+    {
+      "fact_id": "P01:F01",
+      "material_id": "P01",
+      "text": "支持字幕",
+      "source_text": "产品支持字幕。",
+      "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+      "version_date": "2026-01-01"
+    }
+  ],
+  "revisions": [
+    {
+      "operation": "draft_script",
+      "draft": {
+        "title": "字幕创作小灵感",
+        "profile": "detailed",
+        "revision": 1,
+        "audience": "短视频创作者",
+        "platform": "抖音",
+        "style": "简洁清晰",
+        "shots": [
+          {
+            "shot_id": "S01",
+            "visual_type": "title_card",
+            "visual": "展示主题标题卡片",
+            "narration": "想让你的视频更方便观看吗",
+            "subtitle": "想让你的视频更方便观看吗",
+            "hold_seconds": 6,
+            "fact_ids": []
+          },
+          {
+            "shot_id": "S02",
+            "visual_type": "intro_card",
+            "visual": "切换至功能介绍文字卡",
+            "narration": "这次只介绍素材中已确认的功能",
+            "subtitle": "这次只介绍素材中已确认的功能",
+            "hold_seconds": 7,
+            "fact_ids": []
+          },
+          {
+            "shot_id": "S03",
+            "visual_type": "fact_card",
+            "visual": "用文字卡展示已核实的产品事实",
+            "narration": "支持字幕",
+            "subtitle": "支持字幕",
+            "hold_seconds": 6,
+            "fact_ids": [
+              "P01:F01"
+            ]
+          },
+          {
+            "shot_id": "S04",
+            "visual_type": "cta_card",
+            "visual": "切换至创作邀请文字卡",
+            "narration": "选择适合自己的表达方式开始创作",
+            "subtitle": "选择适合自己的表达方式开始创作",
+            "hold_seconds": 7,
+            "fact_ids": []
+          }
+        ]
+      },
+      "draft_digest": "e5ca7f65f5e05253124b6b1ee3a5481217be55a5a5df8837a48735785f3614e5"
+    }
+  ],
+  "editable_draft": {
+    "title": "字幕创作小灵感",
+    "profile": "detailed",
+    "revision": 1,
+    "audience": "短视频创作者",
+    "platform": "抖音",
+    "style": "简洁清晰",
+    "shots": [
+      {
+        "shot_id": "S01",
+        "visual_type": "title_card",
+        "visual": "展示主题标题卡片",
+        "narration": "想让你的视频更方便观看吗",
+        "subtitle": "想让你的视频更方便观看吗",
+        "hold_seconds": 6,
+        "fact_ids": []
+      },
+      {
+        "shot_id": "S02",
+        "visual_type": "intro_card",
+        "visual": "切换至功能介绍文字卡",
+        "narration": "这次只介绍素材中已确认的功能",
+        "subtitle": "这次只介绍素材中已确认的功能",
+        "hold_seconds": 7,
+        "fact_ids": []
+      },
+      {
+        "shot_id": "S03",
+        "visual_type": "fact_card",
+        "visual": "用文字卡展示已核实的产品事实",
+        "narration": "支持字幕",
+        "subtitle": "支持字幕",
+        "hold_seconds": 6,
+        "fact_ids": [
+          "P01:F01"
+        ]
+      },
+      {
+        "shot_id": "S04",
+        "visual_type": "cta_card",
+        "visual": "切换至创作邀请文字卡",
+        "narration": "选择适合自己的表达方式开始创作",
+        "subtitle": "选择适合自己的表达方式开始创作",
+        "hold_seconds": 7,
+        "fact_ids": []
+      }
+    ]
+  },
+  "duration_check": null,
+  "rule_check": null,
+  "duration_history": [],
+  "rule_history": [],
+  "final_script": null,
+  "tool_errors": [
+    {
+      "tool": "estimate_duration",
+      "material_id": null,
+      "error": "injected_tool_failure"
+    }
+  ],
+  "status": "failed",
+  "gaps": [
+    "需要恢复失败工具并重新核验草稿。"
+  ],
+  "message": "未交付通过脚本；已有草稿与实际检查结果保留。",
+  "trace": [
+    {
+      "step": 1,
+      "tool": "inspect_request",
+      "arguments": {
+        "reason": "先核对五项关键输入和平台。"
+      },
+      "decision_basis": "先核对五项关键输入和平台。",
+      "observation_summary": {
+        "ok": true,
+        "missing_fields": []
+      },
+      "observation": {
+        "ok": true,
+        "request": {
+          "request_id": "tool_failure",
+          "theme": "字幕创作",
+          "audience": "短视频创作者",
+          "platform": "抖音",
+          "target_seconds": 30,
+          "style": "简洁清晰"
+        },
+        "missing_fields": [],
+        "supported_platforms": [
+          "抖音",
+          "小红书",
+          "视频号"
+        ],
+        "profiles": [
+          "detailed",
+          "compact",
+          "minimal"
+        ],
+        "target_semantics": "estimated total must not exceed target; not exact rendered-video length"
+      },
+      "next_action": "search_materials"
+    },
+    {
+      "step": 2,
+      "tool": "search_materials",
+      "arguments": {
+        "reason": "输入完整，按主题检索可核验素材。",
+        "query": "字幕创作",
+        "strategy": "keyword"
+      },
+      "decision_basis": "输入完整，按主题检索可核验素材。",
+      "observation_summary": {
+        "ok": true,
+        "material_ids": [
+          "P01"
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "query": "字幕创作",
+        "strategy": "keyword",
+        "effective_query": "字幕创作",
+        "hits": [
+          {
+            "material_id": "P01",
+            "title": "视频工具字幕事实卡",
+            "version_date": "2026-01-01",
+            "fact_ids": [
+              "P01:F01"
+            ]
+          }
+        ]
+      },
+      "next_action": "read_material"
+    },
+    {
+      "step": 3,
+      "tool": "read_material",
+      "arguments": {
+        "reason": "索引命中后读取原文与事实ID，不能只凭标题生成。",
+        "material_id": "P01"
+      },
+      "decision_basis": "索引命中后读取原文与事实ID，不能只凭标题生成。",
+      "observation_summary": {
+        "ok": true,
+        "read_material_id": "P01"
+      },
+      "observation": {
+        "ok": true,
+        "material": {
+          "material_id": "P01",
+          "title": "视频工具字幕事实卡",
+          "source_text": "产品支持字幕。",
+          "facts": [
+            {
+              "fact_id": "P01:F01",
+              "material_id": "P01",
+              "text": "支持字幕",
+              "source_text": "产品支持字幕。",
+              "source_hash": "692cd1d2ac2b5019b3f74edfed5c9559986004a8aa57a374039b40fd6bf2e547",
+              "version_date": "2026-01-01"
+            }
+          ]
+        }
+      },
+      "next_action": "draft_script"
+    },
+    {
+      "step": 4,
+      "tool": "draft_script",
+      "arguments": {
+        "reason": "已读事实可作为产品主张，先生成详细分镜再实际检查。",
+        "profile": "detailed",
+        "fact_ids": [
+          "P01:F01"
+        ]
+      },
+      "decision_basis": "已读事实可作为产品主张，先生成详细分镜再实际检查。",
+      "observation_summary": {
+        "ok": true,
+        "checks_invalidated": true,
+        "revision": 1,
+        "profile": "detailed",
+        "shot_count": 4
+      },
+      "observation": {
+        "ok": true,
+        "draft": {
+          "title": "字幕创作小灵感",
+          "profile": "detailed",
+          "revision": 1,
+          "audience": "短视频创作者",
+          "platform": "抖音",
+          "style": "简洁清晰",
+          "shots": [
+            {
+              "shot_id": "S01",
+              "visual_type": "title_card",
+              "visual": "展示主题标题卡片",
+              "narration": "想让你的视频更方便观看吗",
+              "subtitle": "想让你的视频更方便观看吗",
+              "hold_seconds": 6,
+              "fact_ids": []
+            },
+            {
+              "shot_id": "S02",
+              "visual_type": "intro_card",
+              "visual": "切换至功能介绍文字卡",
+              "narration": "这次只介绍素材中已确认的功能",
+              "subtitle": "这次只介绍素材中已确认的功能",
+              "hold_seconds": 7,
+              "fact_ids": []
+            },
+            {
+              "shot_id": "S03",
+              "visual_type": "fact_card",
+              "visual": "用文字卡展示已核实的产品事实",
+              "narration": "支持字幕",
+              "subtitle": "支持字幕",
+              "hold_seconds": 6,
+              "fact_ids": [
+                "P01:F01"
+              ]
+            },
+            {
+              "shot_id": "S04",
+              "visual_type": "cta_card",
+              "visual": "切换至创作邀请文字卡",
+              "narration": "选择适合自己的表达方式开始创作",
+              "subtitle": "选择适合自己的表达方式开始创作",
+              "hold_seconds": 7,
+              "fact_ids": []
+            }
+          ]
+        },
+        "draft_digest": "e5ca7f65f5e05253124b6b1ee3a5481217be55a5a5df8837a48735785f3614e5",
+        "checks_invalidated": true
+      },
+      "next_action": "estimate_duration"
+    },
+    {
+      "step": 5,
+      "tool": "estimate_duration",
+      "arguments": {
+        "reason": "当前版本已改变，重新逐镜计算总时长。"
+      },
+      "decision_basis": "当前版本已改变，重新逐镜计算总时长。",
+      "observation_summary": {
+        "ok": false,
+        "error": "duration_tool_failed"
+      },
+      "observation": {
+        "ok": false,
+        "error": "duration_tool_failed"
+      },
+      "next_action": "stop"
+    },
+    {
+      "step": 6,
+      "tool": "stop",
+      "arguments": {
+        "reason": "实际工具返回失败，停止并保留已有结果。",
+        "outcome": "tool_failure"
+      },
+      "decision_basis": "实际工具返回失败，停止并保留已有结果。",
+      "observation_summary": {
+        "ok": true,
+        "status": "failed"
+      },
+      "observation": {
+        "ok": true,
+        "status": "failed",
+        "gaps": [
+          "需要恢复失败工具并重新核验草稿。"
+        ],
+        "message": "未交付通过脚本；已有草稿与实际检查结果保留。"
+      },
+      "next_action": "end"
+    }
+  ]
+}

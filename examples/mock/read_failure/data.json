@@ -1,0 +1,48 @@
+{
+  "version": "synthetic-video-v1",
+  "description": "合成素材P01只支持字幕这一项事实，没有效率、准确率或自动识别数据。",
+  "materials": [
+    {
+      "id": "P01",
+      "title": "视频工具字幕事实卡",
+      "version_date": "2026-01-01",
+      "active": true,
+      "keywords": [
+        "字幕",
+        "视频",
+        "创作",
+        "vlog"
+      ],
+      "source_text": "产品支持字幕。",
+      "facts": [
+        {
+          "id": "F01",
+          "text": "支持字幕"
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "version": "brand-v1",
+    "platforms": [
+      "抖音",
+      "小红书",
+      "视频号"
+    ],
+    "characters_per_second": 4,
+    "min_scene_seconds": 1,
+    "prohibited_terms": [
+      "效率提升80%",
+      "全网第一",
+      "永久免费",
+      "100%准确",
+      "自动识别",
+      "一键生成"
+    ]
+  },
+  "failures": {
+    "read_material": {
+      "times": 1
+    }
+  }
+}
